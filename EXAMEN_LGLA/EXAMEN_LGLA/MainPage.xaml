@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMEN_LGLA.MainPage">
+
+    <StackLayout>
+        <StackLayout Padding="20">
+            <Label Text="Calculadora" FontSize="32" HorizontalOptions="Center"></Label>
+
+            <Entry x:Name="Num1" Placeholder="Ingrese el primer numero" Keyboard="Numeric"></Entry>
+
+            <Entry x:Name="Num2" Placeholder="Ingrese el segundo numero" Keyboard="Numeric"></Entry>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Sumar" Clicked="suma"></Button>
+                <Button Text="Restar" Clicked="resta"></Button>
+                <Button Text="Multiplicar" Clicked="multiplicacion"></Button>
+                <Button Text="Dividir" Clicked="division"></Button>
+
+            </StackLayout>
+            <Label x:Name="Resultado" FontSize="24" HorizontalOptions="Center" TextColor="Black"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
